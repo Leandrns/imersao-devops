@@ -1,0 +1,8 @@
+services:
+  app:
+    build: . # Define o diretório de contexto para a construção da imagem Docker
+    container_name: imersao-devops-app # Nome do container para facilitar a identificação
+    ports:
+      - "8000:8000" # Mapeia a porta 8000 do container para a porta 8000 do host
+    volumes:
+      - .:/app # Monta o diretório atual no container para facilitar o desenvolvimento
